@@ -2,19 +2,21 @@
     height: 1000px;
   }
   
-  .amp-flying-carpet-text-border {
+  .advertising-test {
     background: black;
     color: white;
     padding: 0.25em;
+    text-align: center;
   }
   
-  .amp-fx-flying-carpet {
+  .parallax-carpet {
     height: 300px;
     overflow:hidden;
     position:relative;
   }
   
-  .amp-fx-flying-carpet-clip {
+  .parallax-carpet-clip {
+    background-color: black;
     position: absolute!important;
     top: 0!important;
     left: 0!important;
@@ -28,7 +30,7 @@
     clip-path: polygon(0px 0px,100% 0px,100% 100%,0px 100%)!important;
   }
   
-  .amp-fx-flying-carpet-container {
+  .parallax-carpet-container {
     position: fixed!important;
     top: 0!important;
     width: 100%;
@@ -50,8 +52,7 @@
   }
   
   .dfp-ad {
-    height:600px;
-    width: 300px;
+    width: 100%;
     background: grey;
     text-align: center;
     vertical-align: middle;
