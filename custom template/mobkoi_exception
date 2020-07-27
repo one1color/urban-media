@@ -23,33 +23,21 @@
         var unitElem = top.document.querySelector('#'+insertSlotID+'')
         unitElem.className = "";
     }
-    </script>
-     
-    
-    <ins class='dcmads' data-dcm-click-tracker='%%CLICK_URL_UNESC%%' style='display:inline-block;width:300px;height:250px'
-        data-dcm-placement='[%datadcmplacement%]'
-        data-dcm-rendering-mode='script'
-        data-dcm-https-only
-        data-dcm-publisher-url='%%SITE%%'
-        data-dcm-param-disableautoplay='false' 
-        data-dcm-param-offsettop=''
-        data-dcm-param-offsetbottom=''
-        data-dcm-resettable-device-id=''
-        data-dcm-app-id=''>
-    </ins>
-    
-    <script type="text/javascript">
-    var offsettop = '';
-    switch (top.urban.publisherConfig.page) {
-      case 'm.tsp' || 'm.pnn':
-        offsettop = '45';
-        break;
-      case 'cicero':
-        offsettop = '40';
-        break;
-        default:
-            offsettop = '';
-    }
-    document.getElementsByClassName('dcmads')[0].setAttribute('data-dcm-param-offsettop', offsettop)
-    </script>
-    <script src='https://www.googletagservices.com/dcm/dcmads.js'></script>
+</script>
+
+<ins class='dcmads' style='display:inline-block;width:300px;height:250px'
+    data-dbm-deal='9474107_972675'
+    data-dcm-param-pubstr='N724080.134105URBANMEDIA/B24345190.277005139'
+    data-dcm-param-offsettop='45'
+    data-dcm-param-offsetbottom=''
+    data-dcm-param-disableautoplay='false'
+    data-dcm-resettable-device-id=''
+    data-dcm-child-directed=''
+    data-dcm-limit-ad-tracking=''
+    data-dcm-publisher-url=''
+    data-dcm-app-id=''
+    data-dcm-click-tracker=''
+    data-dcm-api-frameworks='[APIFRAMEWORKS]'
+    data-dcm-omid-partner='[OMIDPARTNER]'>
+  <script src='https://www.googletagservices.com/dcm/dcmads.js'></script>
+</ins>
