@@ -1,0 +1,57 @@
+<script>
+    var insertSlotID = window.self.frameElement.parentNode.parentNode.id,
+        page = top.urban.publisherConfig.page,
+        cssCommon = '#'+insertSlotID +'> div > iframe[id*="1075255"] { position: absolute!important; display: block!important; height: 1px!important; width: 1px!important; min-width: 1px!important; min-height: 1px!important; padding: 0px!important; ; overflow:hidden!important; text-indent: -9999px!important; background-color:initial!important}',
+        targetNode = top.document.querySelector('#'+insertSlotID +'> div'),
+        cssMapping = {
+            'doodle.beta' : '#d-participationPage .d-interOptionAdAligner:after{z-index:10;}#d-participationPage .d-interOptionAdAligner{height:100vh!important;}#d-participationPage .d-interOptionAdLimiter{width: 100vw}#d-participationPage .d-interOptionAdLimiter,#d-participationPage .d-interOptionAdAligner,#d-participationPage #d-interOptionDfpAdView{height:auto!important;}'
+            }
+        ,css = (typeof cssMapping[page] === "undefined") ? cssCommon : cssCommon + " " + cssMapping[page]
+    
+        style = document.createElement('style');
+    
+    style.type = 'text/css';
+    if (style.styleSheet){
+      style.styleSheet.cssText = css;
+    } else {
+      style.appendChild(document.createTextNode(css));
+    }
+    targetNode.appendChild(style);
+    
+    
+    if(top.urban.publisherConfig.page == 'm.tsp'|| top.urban.publisherConfig.page == 'm.pnn'){
+        var unitElem = top.document.querySelector('#'+insertSlotID+'')
+        unitElem.className = "";
+    }
+    </script>
+     
+    
+    <ins class='dcmads' data-dcm-click-tracker='%%CLICK_URL_UNESC%%' style='display:inline-block;width:300px;height:250px'
+        data-dcm-placement='[%datadcmplacement%]'
+        data-dcm-rendering-mode='script'
+        data-dcm-https-only
+        data-dcm-publisher-url='%%SITE%%'
+        data-dcm-param-disableautoplay='false' 
+        data-dcm-param-offsettop=''
+        data-dcm-param-offsetbottom=''
+        data-dcm-resettable-device-id=''
+        data-dcm-app-id=''>
+    </ins>
+    
+    <script type="text/javascript">
+    var offsettop = '';
+    switch (top.urban.publisherConfig.page) {
+      case 'm.tsp' || 'm.pnn':
+        offsettop = '45';
+        break;
+      case 'cicero':
+        offsettop = '40';
+        break;
+        default:
+            offsettop = '';
+    }
+    document.getElementsByClassName('dcmads')[0].setAttribute('data-dcm-param-offsettop', offsettop)
+    </script>
+    <script src='https://www.googletagservices.com/dcm/dcmads.js'></script>
+
+[%HTML%]
